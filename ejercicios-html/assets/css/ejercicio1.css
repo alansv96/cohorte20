@@ -1,0 +1,28 @@
+body{
+    background-color: gainsboro;
+}
+header{
+
+    background-color: gainsboro;
+    
+}
+nav{
+    background-color: greenyellow;
+    
+    
+    
+
+}
+
+article{
+    background-color: yellow;
+    
+    
+}
+footer{
+    background-color: gray;
+}
+.margen{
+    padding-top: 1px;
+    
+}

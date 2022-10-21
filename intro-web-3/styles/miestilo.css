@@ -1,0 +1,39 @@
+ p {
+    color: blueviolet;
+}
+ 
+/* selector de tipo */
+ pre{
+    color:aqua ;
+}
+em {
+    color: crimson;
+}
+span {
+    color: black;
+}
+/* selector universal */
+*{
+    color: orange;
+}
+/* selector de clase  */
+.titulo {
+    color: blue;
+}
+.bl {
+    float: right;
+    background-color: black;
+    color: azure;
+}
+/* selector de ID */
+#selector {
+        color: blueviolet;
+}
+
+a{
+    font-size: 30px;
+    color: brown;
+}
+.body {
+    background-color: aqua;
+}

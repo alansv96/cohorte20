@@ -1,0 +1,38 @@
+#titulo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+    font-style: italic;
+    
+    /* color: rgb(32, 132, 118); */
+
+    color: hsl(196, 64%, 46%);
+
+    /* border: 3px solid green;
+
+    width: 100px;
+    height: 100px;
+    overflow: scroll;
+    margin: 60px;
+    padding: 20px;
+    padding-left: 40px; */
+}
+#tabla {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-style: oblique;
+    width: 600px;
+    height: 300px;
+    overflow: scroll;
+    
+
+}
+
+.footer {
+
+    color: black;
+    font-size: small;
+}
+
+
+
+
