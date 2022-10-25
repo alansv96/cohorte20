@@ -1,0 +1,38 @@
+/* FORM STARTS */
+form{
+    display: inline-block;
+    padding: 10px;
+    width: 250px;
+    background-color: aquamarine;
+}
+
+
+label{
+    display: inline-block;
+    width: 80px;
+}
+
+/* div > input{
+    width: 150px;
+} */
+.campo
+{
+    width: 150px
+}
+
+/* FORM ENDS */
+#btn{
+    background-color: chocolate;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    width: 100%;
+    font-weight: 600;
+    color: azure;
+}
+
+#btn:hover{
+    background-color: blue;
+    transform: scale(0.8);
+}
