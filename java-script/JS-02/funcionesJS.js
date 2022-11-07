@@ -1,5 +1,5 @@
 
-let miNombre =" Alan Sandoval Villa" //declaracion global 
+/* let miNombre =" Alan Sandoval Villa" //declaracion global 
 console.log(miNombre);
 
 function  funcionMiNombre(){
@@ -76,15 +76,38 @@ let calcularPrecioTotal3= (precio) =>{
     let gastosEnvio=10
     return precioConImpuesto+gastosEnvio
 }
-console.log(calcularPrecioTotal3(23.34));
+console.log(calcularPrecioTotal3(23.34)); */
 
 //declaracion de objetos
 
 let miObjeto={
     nombre: "Juan",
-    edad: 20
-};
-let mensaje = "tu nombre es: "+ miObjeto.nombre;
-mensaje+= " tienes "+miObjeto["edad"] + " años";
-console.log(mensaje);
+    edad: 20,
+    datos: function(){
+        let mensaje = "tu nombre es: "+ this.nombre;
+        mensaje+= " tienes "+this.edad + " años";
+        console.log(mensaje);   
 
+    }
+    
+};
+miObjeto.datos();
+
+let constructor = function (){
+    let objPersona ={
+        nombre: "Juan",
+        nss: 2235,
+        datosPersona: function (){
+            let msj= "eres" + this.nombre+ "el numero nss es "+ this.nss;
+            console.log(msj);
+        },
+        otroMetodo: function (parametro){
+            let numero=8;
+            console.log("la suma es: "+ (numero+parametro));
+        }
+    };
+    return objPersona
+}
+let varObjReg=constructor()// crear la variable objeto
+varObjReg.datosPersona();
+varObjReg.otroMetodo(20);
