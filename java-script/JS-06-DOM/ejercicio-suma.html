@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <form id="formulario">
+        Num1 <input type="text" name="num1" value="5"> <br>
+        Num2 <input type="text" name="num2" value="7">
+    </form>
+    <button onclick="sumar()">Sumar</button>
+    <div id="result">Resultado</div>
+    <script>
+        function sumar(){
+            let formulario = document.forms["formulario"]
+            let result =0
+            /* en lugar de un ciclo se puderon obtener los valores directos y sumarlos para esto se accede al valor del formulario con farmulario["name"] */
+            for(let elemento of formulario){
+                result+=Number(elemento.value)
+            }
+            document.getElementById("result").innerHTML= result
+
+        }
+
+        /*
+        
+        para acceder a un elemento de un formulario 
+        formulario["name"]
+        
+        otra manera de hacerlo 
+
+        let num = document.querySelectorAll('.number')
+        let boton = document.getElementById('boton')
+        let container = document.getElementById('container')
+
+        boton.addEventListener('click', () => {
+
+            let suma = 0
+
+        num.forEach( elemento => suma += Number(elemento.value))
+
+        container.innerHTML = suma
+
+})
+ */
+
+
+
+    </script>
+
+    
+  
+    
+</body>
+</html>
