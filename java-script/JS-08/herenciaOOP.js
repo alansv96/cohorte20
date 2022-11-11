@@ -12,6 +12,10 @@ class Persona{
     nombreCompleto(){
         return this._nombre+" "+ this._apellido
     }
+    //sobre escritura del metodo toString de la clase object
+    toString(){
+        return this.nombreCompleto()
+    }
 
 }
 
@@ -27,9 +31,19 @@ class Empleado extends Persona{
     get empresa(){
         return this._empresa
     }
+    //se sobre escribio el metodo de la clase padre
+    nombreCompleto(){
+        return super.nombreCompleto() + " " + this._empresa
+    }
+
+    
 
 }
 let p1 = new Persona("Hugo","Sanchez")
 console.log(p1.nombreCompleto());
+console.log(p1.toString());
 let e1= new Empleado("Juan","Sanchez","Coppel")
-console.log(e1.nombreCompleto()+" "+e1._empresa);
+//console.log(e1.nombreCompleto()+" "+e1._empresa);
+// sobre escritura
+console.log(e1.nombreCompleto());
+console.log(e1.toString());
