@@ -4,3 +4,4 @@ where idCategoria=2 and  precio >10 and existencia between 5 and 20 and fecha_al
  
  select idCategoria from productos where idCategoria>2;
  select * from productos where idCategoria in (select id from categoria where id>2);
+

@@ -1,0 +1,5 @@
+task hola{
+    doLast{
+        print 'hola saludos de gradle'
+    }
+}
