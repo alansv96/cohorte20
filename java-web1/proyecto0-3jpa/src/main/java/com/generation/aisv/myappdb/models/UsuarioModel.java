@@ -27,10 +27,7 @@ public class UsuarioModel {
 	
 /*******************relaciones************/
 	
-	@OneToMany(mappedBy = "usuario") // un usuario con muchos productos
-	private ArrayList<ProductoModel> productos;
-	@OneToMany(mappedBy = "usuario") // un usuario con muchos ordenes
-	private ArrayList<OrdenModel> ordenes;
+	
 	
 	
 	
@@ -41,8 +38,7 @@ public class UsuarioModel {
 		this.nombre = nombre;
 		this.email = email;
 		this.prioridad = prioridad;
-		this.productos = productos;
-		this.ordenes = ordenes;
+	
 	}
 
 	/******************************************/
@@ -51,24 +47,9 @@ public class UsuarioModel {
 
 	}
 
-	public ArrayList<ProductoModel> getProductos() {
-		return productos;
-	}
-
-	public void setProductos(ArrayList<ProductoModel> productos) {
-		this.productos = productos;
-	}
-
-	public ArrayList<OrdenModel> getOrdenes() {
-		return ordenes;
-	}
-
-	public void setOrdenes(ArrayList<OrdenModel> ordenes) {
-		this.ordenes = ordenes;
-	}
-
+	
 	public UsuarioModel(Long id, String nombre, String email, Integer prioridad) {
-		super();
+
 		this.id = id;
 		this.nombre = nombre;
 		this.email = email;
