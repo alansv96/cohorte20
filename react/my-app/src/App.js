@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import Micomponente from './MiComponente';
 
 function App() {
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -9,6 +11,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <Micomponente></Micomponente>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -17,6 +20,7 @@ function App() {
         >
           Learn React
         </a>
+        
       </header>
     </div>
   );
